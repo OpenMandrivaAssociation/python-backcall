@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.2.0
-Release:        3
+Release:        4
 Summary:        Specifications for callback functions passed in to an API
 Group:          Development/Python
 License:        BSD
