@@ -12,7 +12,8 @@ Source0:        https://files.pythonhosted.org/packages/a2/40/764a663805d84deee2
 BuildArch:      noarch
  
 BuildRequires:  pkgconfig(python)
-BuildRequires:  python3dist(setuptools)
+BuildRequires:  python%{pyver}dist(setuptools)
+BuildRequires:  python%{pyver}dist(pip)
 
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
