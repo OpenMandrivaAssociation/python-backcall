@@ -38,4 +38,4 @@ prototype function::...
 %files
 %doc README.rst
 %{python_sitelib}/%{pypi_name}
-%{python_sitelib}/%{pypi_name}-%{version}-py*.*.egg-info
+%{python_sitelib}/%{pypi_name}-%{version}.dist-info
