@@ -9,6 +9,7 @@ Group:          Development/Python
 License:        BSD
 URL:            https://github.com/takluyver/backcall
 Source0:        https://files.pythonhosted.org/packages/a2/40/764a663805d84deee23043e1426a9175567db89c8b3287b5c2ad9f71aa93/backcall-%{version}.tar.gz
+Patch0:         python-backcall-flit4.patch
 BuildArch:      noarch
  
 BuildRequires:  pkgconfig(python)
@@ -26,7 +27,7 @@ careful.backcall provides a way of specifying the callback signature using a
 prototype function::...
 
 %prep
-%autosetup -n %{pypi_name}-%{version}
+%autosetup -n %{pypi_name}-%{version} -p1
 
 %build
 %py_build
